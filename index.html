@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            body{
+    background: #d6dfe2;
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+header .navigation {
+    background-color: #d0e1e7;
+    margin: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #88c6dc;
+    border-radius: 20px;
+}
+h {
+    font-size: 1.6rem;
+    color: rgb(9, 11, 21);
+    margin: 10px;
+}
+.navigation a {
+    position: relative;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 100;
+    margin: auto;
+    padding: auto;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 80%;
+    height: 3px;
+    background: azure;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scalex(0);
+    transition: transform .5s;
+}
+.navigation a:hover::after{
+    transform: scalex(1);
+    transform-origin: left;
+}
+.navigation .btnlogin{
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: 4cm;
+    transition: 5s;
+}
+.navigation .btnlogin:hover{
+    background-color: azure;
+} 
+#nav1{
+    height: 5px;
+    margin: 10px;
+    background-color: #88c6dc;
+    border-radius: 20px;
+}
+.main{
+    background-color: #fff;
+    border-radius: 5px;
+    color: #151c1e;
+    padding-left: 40px;
+    text-align: center;
+    display: grid;
+} 
+header {
+    background-color:  #92a0f1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+} 
+.grid-container {
+  display: grid;
+  gap: 10px;
+  background-color: #9ec1de;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+.proceed-button {
+            background-color: #92a0f1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .proceed-button:hover {
+            background-color: #92a0f1;
+        }
+.button, .sub-button {
+            background-color:  #92a0f1;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover, .sub-button:hover {
+            background-color: #92a0f1;
+        }
+        .info {
+            display: inline-table;
+            margin-top: 5px;
+            text-align: center;
+            color:  #92a0f1;
+        }
+        .sub-button{
+            display: block;
+        
+        }
+
+        footer.navigation2 {
+    background-color:   #92a0f1;
+    margin: 10px;
+    height: 50px;
+    padding-left: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid  #92a0f1;
+    border-radius: 20px;
+}
+        </style>
+    </head>
+    <body>
+        <header>
+        <nav class="navigation">
+        <h>LESOTHO HUB</h>
+            <a href="">home</a>
+            <a href="shop.html">Shop</a>
+            <a href="Tips.html">Tips</a>
+            <a href="About us.html">About us</a>
+            <a href="Contact us.html">Contact us</a>
+        </nav>
+    </header>
+    <div id="nav1">
+    </div>
+    <div class="main">
+        <p>WELCOME TO LESOTHO HUB</p>
+            Lesotho hub is the fastest 
+            online market reliable for 
+            for both small businesses 
+            as well as the faithfully
+            customers for quality goods 
+            and services.
+        </p>
+    </div>
+    <form action="shop.html">
+        <div class="custom-select" style="width:80px;">
+          <select>
+            <option value="0">Categories</option>
+            <a href="shop.html"><option value="1">Security</option></a>
+            <option value="2">Sound</option> 
+            <option value="3">cosmetics</option>
+            <option value="4">Craft</option>
+          </select>
+        </div>
+    </form>
+        <div class="grid-container">
+            <div class="grid-item item1">
+                <a href="shop.html"><button class="sub-button" onclick="showDetail('Security-info'); showBackButton();">Security</button></a>
+                <div id="Security-info" class="info">
+                    <h2>Security shop</h2>
+                    <div id="shop">
+                        <div class="shop">
+                            <h3>Alarms,Cams & Monitors </h3>
+                            <p>shop now</p>
+                            <img src="camr.png" width="90" height="90" alt="Potatoes">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item item2">
+                <a href="shop.html"><button class="sub-button" onclick="showDetail('Sound-info'); showBackButton();">Sound</button></a>
+                <div id="Sound-info" class="info">
+                    <h2>Sound shop</h2>
+                    <div id="shop">
+                        <div class="shop">
+                            <h3>car radios </h3>
+                            <p>shop now</p>
+                            <img src="car radio.png" width="90" height="90" alt="Potatoes">
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="grid-item item3">
+                <a href="shop  .html"><button class="sub-button" onclick="showDetail('Sound-info'); showBackButton();">cosmetics</button></a>
+                <div id="cosmetics-info" class="info">
+                    <h2>cosmetics shop</h2>
+                    <div id="shop">
+                        <div class="shop">
+                            <h3>Body lotions </h3>
+                            <p>shop now</p>
+                            <img src="cos1.png" width="90" height="90" alt="Potatoes">
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="grid-item item4">
+                <a href="shop  .html"><button class="sub-button" onclick="showDetail('Sound-info'); showBackButton();">Craft</button></a>
+                <div id="Craft-info" class="info">
+                    <h2>Craft shop</h2>
+                    <div id="shop">
+                        <div class="shop">
+                            <h3>craftd products </h3>
+                            <p>shop now</p>
+                            <img src="mk.png" width="90" height="90" alt="Potatoes">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item item5">
+                <footer class="navigation2">LS HUB @2024</footer>
+            </div>
+    </body>
+   
+    </html>

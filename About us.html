@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            body{
+    background: #d6dfe2;
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+header .navigation {
+    background-color: #d0e1e7;
+    margin: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #88c6dc;
+    border-radius: 20px;
+}
+h {
+    font-size: 1.6rem;
+    color: rgb(9, 11, 21);
+    margin: 10px;
+}
+.navigation a {
+    position: relative;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 100;
+    margin: 10px;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 80%;
+    height: 3px;
+    background: azure;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scalex(0);
+    transition: transform .5s;
+}
+.navigation a:hover::after{
+    transform: scalex(1);
+    transform-origin: left;
+}
+.navigation .btnlogin{
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 5s;
+}
+.navigation .btnlogin:hover{
+    background-color: azure;
+} 
+#nav1{
+    height: 5px;
+    margin: 10px;
+    background-color: #88c6dc;
+    border-radius: 20px;
+}
+header {
+    background-color:  #92a0f1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #758dc0;
+  color: white;
+}
+footer.navigation2 {
+    background-color:   #92a0f1;
+    margin: 10px;
+    height: 50px;
+    padding-left: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid  #92a0f1;
+    border-radius: 20px;
+} 
+        </style>
+    </head>
+    <body>
+        <header>
+        <nav class="navigation">
+        <h>LESOTHO HUB</h>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="Tips.html">Tips</a>
+            <a href="About us.html">About us</a>
+            <a href="Contact us.html">Contact us</a>
+        </nav>
+    </header>
+    <div id="nav1">
+    </div>
+    <div class="about-section">
+        <h><b>ABOUT US</b></h>
+        <p>Lesotho hub is the web page for businesses
+            in online for services as an advertisement
+            wse also ensure secure security that your 
+            product get you during the purchasing method</p>
+            <br>
+            <p>The only initiative of its kind in Lesotho, The 
+            Hub is a creative technology lab that provides access 
+            to computers, the internet, a library, and digital media 
+            training in Morija.Our primary target is young people between
+            the ages of 8-35, and through our various activities, we aim to 
+            foster a community of young people in Lesotho who are skilled, 
+            inspired, motivated and socially conscious.</p>
+      </div
+    </body>
+    <footer class="navigation2">LS HUB @2024</footer>
+    </html>

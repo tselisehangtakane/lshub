@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            body{
+    background: #d6dfe2;
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+header .navigation {
+    background-color: #d0e1e7;
+    margin: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #88c6dc;
+    border-radius: 20px;
+}
+h {
+    font-size: 1.6rem;
+    color: rgb(9, 11, 21);
+    margin: 10px;
+}
+.navigation a {
+    position: relative;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 100;
+    margin: 10px;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 80%;
+    height: 3px;
+    background: azure;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scalex(0);
+    transition: transform .5s;
+}
+.navigation a:hover::after{
+    transform: scalex(1);
+    transform-origin: left;
+}
+.navigation .btnlogin{
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 5s;
+}
+.navigation .btnlogin:hover{
+    background-color: azure;
+} 
+#nav1{
+    height: 5px;
+    margin: 10px;
+    background-color: #88c6dc;
+    border-radius: 20px;
+}
+.main{
+    background-color: #fff;
+    margin-left: 93px;
+    margin-right: 500px;
+    color: #d0e1e7;
+} 
+header {
+    background-color:  #92a0f1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+fieldset{
+    margin-left: 380px;
+    margin-top: -3px;
+    margin-right: 5px;
+} 
+div.gallery1 {
+  position:absolute;
+  border: 1px solid #ccc;
+  width: 140px;
+  margin-left: 650px;
+  margin-top: 200px;
+}  
+div.gallery1:hover {
+  border: 1px solid #777;
+}
+
+div.gallery1 img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+  div.gallery2 {
+  position:absolute;
+  border: 1px solid #ccc;
+  width: 140px;
+  margin-left: 650px;
+  margin-top: 15px;
+}  
+div.gallery2:hover {
+  border: 1px solid #777;
+}
+
+div.gallery2 img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+div.gallery3 {
+  position:absolute;
+  border: 1px solid #ccc;
+  width: 140px;
+  margin-top: 15px;
+  margin-left: 435px;
+}  
+div.gallery3:hover {
+  border: 1px solid #777;
+}
+
+div.gallery3 img {
+  width: 140px;
+  height: 110px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+div.gallery4 {
+  position:absolute;
+  border: 1px solid #ccc;
+  width: 140px;
+  height: 170px;
+  margin-top: 195px;
+  margin-left: 435px;
+}  
+div.gallery4:hover {
+  border: 1px solid #777;
+}
+
+div.gallery4 img {
+  width: 140px;
+  height: 110px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+div.gallery5 {
+  position:absolute;
+  border: 1px solid #ccc;
+  width: 110px;
+  margin: 5px;
+  margin-left: 225px;
+  margin-top: 195px;
+}  
+div.gallery5:hover {
+  border: 1px solid #777;
+}
+
+div.gallery5 img {
+  width: 110px;
+  height: 120px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+div.gallery6 {
+  position:absolute;
+  border: 1px solid #ccc;
+  width: 110px;
+  margin: 5px;
+  margin-left: 225px;
+}  
+div.gallery6:hover {
+  border: 1px solid #777;
+}
+
+div.gallery6 img {
+  width: 110px;
+  height: 120px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+div.gallery7 {
+  position:absolute;
+  border: 1px solid #ccc;
+  width: 110px;
+  margin: 5px;
+  margin-left: 860px;
+}  
+div.gallery7:hover {
+  border: 1px solid #777;
+}
+
+div.gallery7 img {
+  width: 110px;
+  height: 120px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+div.gallery8 {
+  position:absolute;
+  border: 1px solid #ccc;
+  width: 110px;
+  margin: auto;
+  margin-left: 860px;
+  margin-top: 200px;
+}  
+div.gallery8:hover {
+  border: 1px solid #777;
+}
+
+div.gallery8 img {
+  width: 110px;
+  height: 120px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}  
+footer.navigation2 {
+    background-color:  #4660f4;
+    margin: 10px;
+    height: 50px;
+    padding-left: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid  #92a0f1;
+    border-radius: 20px;
+    margin-top: 395px;
+}  
+        </style>
+    </head>
+    <body>
+        <header>
+        <nav class="navigation">
+        <h>LESOTHO HUB</h>
+            <a href="index.html">Home</a>
+            <a href="security">Shop</a>
+            <a href="Tips.html">Tips</a>
+            <a href="About us.html">About us</a>
+            <a href="Contact us.html">Contact us</a>
+        </nav>
+    </header>
+    <div id="nav1">
+    </div>
+        <div class="gallery1">
+           <a href="log in.html"><img src="alarm.png" alt="motor radios" width="140" height="140"></a>
+          <div class="desc">M2800.00</div>
+        </div>
+        <div class="gallery2">
+         <a href="log in.html"> <img src="camr.png" alt="motor radios" width="140" height="140"></a>
+        <div class="desc">M4200.00</div>
+      </div>
+      <div class="gallery3">
+           <a href="log in.html"><img src="car radio.png" alt="motor radios" width="140" height="140"></a>
+          <div class="desc">M2800.00</div>
+        </div>
+        <div class="gallery4">
+          <a href="log in.html"><img src="welese.png" alt="motor radios" width="140" height="140"></a>
+        <div class="desc">M4200.00
+        </div>
+      </div>
+      <div class="gallery5">
+        <a href="log in.html"><img src="cos1.png" alt="motor radios" width="140" height="140"></a>
+      <div class="desc">M80.00</div>
+    </div>
+    <div class="gallery6">
+      <a href="log in.html"><img src="cos2.png" width="140" height="140"></a>
+    <div class="desc">M80.00</div>
+    </div>
+    <div class="gallery7">
+       <a href="log in.html" ><img src="seroto.png" alt="motor radios" width="140" height="140"></a>
+      <div class="desc">M180.00</div>
+    </div>
+    <div class="gallery8">
+      <a href="log in.html" ><img src="mk.png" alt="motor radios" width="140" height="140"></a>
+      <div class="desc">M200.00</div>
+    </div>
+    </body>
+    <footer class="navigation2">LS HUB @2024</footer>
+    </html>
